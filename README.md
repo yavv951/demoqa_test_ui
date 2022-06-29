@@ -4,7 +4,7 @@
 
 Создайте отдельную директорию на локальном компьютере
 Скачайте все файлы которые расположены в директории
-git clone https://github.com/yavv951/ui_test.git
+git clone https://github.com/yavv951/demoaq_test.git
 Откройте проект
 Установите все пакеты, которые указаны в файле requirements.txt
 pip install -r /path/to/requirements.txt
