@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="37050fd9-7dd7-4486-b09c-dd4600f92d27" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locators/automation_practice_form_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/locators/automation_practice_form_locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locators/web_tables_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/locators/web_tables_locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/automation_practice_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/automation_practice_form.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/base_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/web_tables_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/web_tables_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_practice_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_practice_form.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_web_tables_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_web_tables_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
