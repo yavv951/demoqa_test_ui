@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37050fd9-7dd7-4486-b09c-dd4600f92d27" name="Changes" comment="" />
+    <list default="true" id="37050fd9-7dd7-4486-b09c-dd4600f92d27" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locators/automation_practice_form_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/locators/automation_practice_form_locators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locators/web_tables_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/locators/web_tables_locators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/automation_practice_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/automation_practice_form.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/base_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/web_tables_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/web_tables_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_practice_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_practice_form.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_web_tables_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_web_tables_page.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,14 +28,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/user/PycharmProjects/demoaq_test"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/user/PycharmProjects/demoaq_test/tests&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Python tests.Python tests for test_practice_form.TestPracticeFormPage.test_have_text_on_page">
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests" />
+      <recent name="$PROJECT_DIR$/src/pages" />
+      <recent name="$PROJECT_DIR$/src/models" />
+      <recent name="$PROJECT_DIR$/src/locators" />
+      <recent name="$PROJECT_DIR$/src/user_images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Python tests for test_web_tables_page.TestWebTablesPage.test_web_tables">
     <configuration name="Python tests for test_practice_form.TestFirstPage.test_have_text_on_page" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="demoaq_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -37,6 +60,20 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_practice_form.TestFirstPage.test_have_text_on_page&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_practice_form.TestPracticeFormPage.test_form_registration_student" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="demoaq_test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_practice_form.TestPracticeFormPage.test_form_registration_student&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -54,8 +91,24 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_web_tables_page.TestWebTablesPage.test_web_tables" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="demoaq_test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_web_tables_page.TestWebTablesPage.test_web_tables&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_web_tables_page.TestWebTablesPage.test_web_tables" />
+        <item itemvalue="Python tests.Python tests for test_practice_form.TestPracticeFormPage.test_form_registration_student" />
         <item itemvalue="Python tests.Python tests for test_practice_form.TestPracticeFormPage.test_have_text_on_page" />
         <item itemvalue="Python tests.Python tests for test_practice_form.TestFirstPage.test_have_text_on_page" />
       </list>
@@ -71,5 +124,16 @@
       <updated>1656257100837</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

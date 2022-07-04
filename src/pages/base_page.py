@@ -1,4 +1,5 @@
 from selene import *
+from selene.core.entity import SeleneElement
 from selene.core.wait import Command
 from selene.support.shared import browser
 from selene.support.conditions import have, be
@@ -41,6 +42,15 @@ class BasePage:
         browser.element(locator).should(have.text(text))
 
     @staticmethod
+    def cells_of_row(index, locator, locator_2, locator_3, text, text_2):
+        """ метод по работе с табличными данными, применим когда необходимо по строкам определить введенный текст"""
+        browser.element(locator).all(locator_2)[index].all(locator_3).should(have.exact_texts(text, text_2))
+
+    @staticmethod
+    def check_element_have_text_by(index, locator, text):
+        browser.all(locator)[index].should(have.text(text))
+
+    @staticmethod
     def check_element_have_text_(locator, text):
         browser.all(locator).should(have.text(text))
 
@@ -73,8 +83,8 @@ class BasePage:
         return browser.all(locator).element(have.text(value)).click()
 
     @staticmethod
-    def size(locator):
-        return browser.find_elements(*locator)
+    def size_line(locator):
+        return browser.all(locator)
 
     @staticmethod
     def find_element(locator):
@@ -104,8 +114,14 @@ class BasePage:
         """ Метод наведения курсора на поле"""
         browser.element(locator).hover()
 
+    @staticmethod
+    def select(locator, locator_2, option):
+        """Функция для работы с select элементами"""
+        browser.element(locator).perform(command.js.scroll_into_view).click()
+        browser.all(locator_2).element_by(have.exact_text(option)).click()
 
 class SelectList(object):
+    """ Создан отдельных класс для работы с select элементами"""
     def __init__(self, element):
         self._element = element
 

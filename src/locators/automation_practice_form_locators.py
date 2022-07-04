@@ -7,8 +7,11 @@ class PracticeFormPageLocators:
     SUBJECTBLANK = "#subjectsInput"
     HOBBIES = ".custom-control-label"
     CURRENTADDRESS = "#currentAddress"
-    STATE = "#react-select-3-input"
-    CITY = "#react-select-4-input"
+    #STATE = "#react-select-3-input"
+    #CITY = "#react-select-4-input"
+    STATE_CITY_OPTION = '[id^=react-select-][id*=-option]'
+    STATE = "#state"
+    CITY = "#city"
     SUBMIT = "#submit"
     UPLOADPICTURE = "#uploadPicture"
     DATE_FORM = "#dateOfBirthInput"
@@ -18,5 +21,9 @@ class PracticeFormPageLocators:
     #Delectors on Submiting form
     MODAL_TITLE = "#example-modal-sizes-title-lg"
     MODAL_FORM_STUDENT_INFO = "tbody"
+    TABLE = ".modal-content  .table"
+    LINE = 'tbody tr'
+    ELEMENTS_ON_LINE = 'td'
+    BUTTON_CLOSE_MODAL_FORM = '#closeLargeModal'
 
 

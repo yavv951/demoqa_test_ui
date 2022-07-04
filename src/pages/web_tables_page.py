@@ -32,10 +32,23 @@ class WebTablesPage(BasePage):
     def delete_record(self):
         self.click_element(WebTablesFormPageLocators.DELETE_RECORD)
 
-    def check_have_text_on_fields(self, data: WebTablesPageModel):
-        """"Проверка, что текст иммется на странице"""
-        self.check_element_have_text_(WebTablesFormPageLocators.SECOND_FIELD, data.first_name)
-        self.check_element_have_text_(WebTablesFormPageLocators.SECOND_FIELD, data.last_name)
-        self.check_element_have_text_(WebTablesFormPageLocators.SECOND_FIELD, data.age)
-        self.check_element_have_text_(WebTablesFormPageLocators.SECOND_FIELD, data.salary)
-        self.check_element_have_text_(WebTablesFormPageLocators.SECOND_FIELD, data.department)
+    """def check_have_text_on_fields(self, data: WebTablesPageModel):
+        #Проверка, что текст иммется на странице, код был в первой версии тестов
+        self.check_element_have_text_(WebTablesFormPageLocators.TABLES_FIELDS, data.first_name)
+        self.check_element_have_text_(WebTablesFormPageLocators.TABLES_FIELDS, data.last_name)
+        self.check_element_have_text_(WebTablesFormPageLocators.TABLES_FIELDS, data.user_email)
+        self.check_element_have_text_(WebTablesFormPageLocators.TABLES_FIELDS, data.age)
+        self.check_element_have_text_(WebTablesFormPageLocators.TABLES_FIELDS, data.salary)
+        self.check_element_have_text_(WebTablesFormPageLocators.TABLES_FIELDS, data.department)"""
+
+    def check_delete_element(self):
+        self.check_element_have_text_by(index=1, locator=WebTablesFormPageLocators.EVEN_NUMBERS_LINE,
+                                        text='')
+
+    def check_elements_on_fourth_line(self, data: WebTablesPageModel):
+        self.check_element_have_text_by(index=1, locator=WebTablesFormPageLocators.EVEN_NUMBERS_LINE,
+                                        text=f"{data.first_name}\n{data.last_name}\n{data.age}\n{data.user_email}\n{data.salary}\n{data.department}")
+
+    def check_elements_on_second_line(self, data: WebTablesPageModel):
+        self.check_element_have_text_by(index=0, locator=WebTablesFormPageLocators.EVEN_NUMBERS_LINE,
+                                        text=f"{data.first_name}\n{data.last_name}\n{data.age}\n{data.user_email}\n{data.salary}\n{data.department}")

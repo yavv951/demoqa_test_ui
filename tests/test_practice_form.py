@@ -31,16 +31,18 @@ class TestPracticeFormPage:
            Current Address
            State and City
         3. Проверить,что заполненные поля отобразились в форме регистрациию
+        4. Закрыть модальное окно
         """
         abs_path = os.path.join(self.image_dir, image_file)
         field = PracticeFormPageModel.random()
         open_browser.practice_form_page.input_information_student(field)
         open_browser.practice_form_page.fill_date_form(field)
-        open_browser.practice_form_page.fill_state_and_city(field)
+        open_browser.practice_form_page.input_state_city(field)
         open_browser.practice_form_page.input_hobbies(field)
         open_browser.practice_form_page.input_gender(field)
         open_browser.practice_form_page.choose_image_file(abs_path)
         open_browser.practice_form_page.click_submit()
         open_browser.practice_form_page.check_have_text_on_submiting_form(field)
+        open_browser.practice_form_page.click_on_button_close()
 
 
