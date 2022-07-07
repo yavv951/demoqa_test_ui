@@ -1,19 +1,20 @@
 import pytest
+from selene.support.shared import browser
 from src.pages.application import Application
-from src.pages.base_page import BasePage
+
 
 @pytest.fixture
-def open_browser(request):
+def app(request):
     base_url = request.config.getoption("--base-url")
-    BasePage.open_page(base_url)
+    browser.open_url(base_url).driver.set_window_size(width=1980, height=1280)
     app = Application(base_url)
     yield app
     app.close()
 
 @pytest.fixture
-def open_browser_web_tables_page(request):
+def app_web_tables_page(request):
     base_url = request.config.getoption("--web-tables-url")
-    BasePage.open_page(base_url)
+    browser.open_url(base_url).driver.set_window_size(width=1980, height=1280)
     app = Application(base_url)
     yield app
     app.close()

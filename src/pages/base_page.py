@@ -10,10 +10,6 @@ class BasePage:
         self.app = app
 
     @staticmethod
-    def open_page(url):
-        browser.open_url(url).driver.maximize_window()
-
-    @staticmethod
     def fill_element(locator, text):
         browser.element(locator).clear().type(text)
 
