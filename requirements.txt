@@ -1,5 +1,6 @@
 selene>=2.0.0b5
-pytest
+pytest~=7.1.2
 attrs==21.4.0
 Faker==8.12.1
 allure-pytest
+python-dotenv~=0.20.0

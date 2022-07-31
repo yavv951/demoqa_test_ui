@@ -1,8 +1,10 @@
 import os
 
 import pytest
+from selene.support.shared import browser
 
 from src.models.automation_practice_form import PracticeFormPageModel
+from utils import attach
 
 current_dir = os.path.dirname(__file__)
 user_images_directory = os.path.join(current_dir, "user_images")
@@ -46,3 +48,8 @@ class TestPracticeFormPage:
             .click_submit()\
             .check_have_text_on_submiting_form(field)\
             .click_on_button_close()
+
+        attach.add_html(browser)
+        attach.add_screenshot(browser)
+        attach.add_logs(browser)
+        attach.add_video(browser)
