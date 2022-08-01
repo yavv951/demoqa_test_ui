@@ -17,7 +17,6 @@ class TestWebTablesPage:
     @allure.feature('Testing site qa guru with selene')
     @allure.story(f'Тест кейс 0002 Форма регистрации студента')
     @allure.link('https://github.com/yavv951', name='Owner')
-    @allure.step("Открываем страницу https://demoqa.com/webtables")
     def test_web_tables(self, app_web_tables_page):
         field_first = WebTablesPageModel.random()
         app_web_tables_page.web_tables_page \
@@ -33,6 +32,7 @@ class TestWebTablesPage:
             .check_elements_on_second_line(field_second) \
             .delete_record() \
             .check_delete_element()
+
         attach.add_html(browser)
         attach.add_screenshot(browser)
         attach.add_logs(browser)

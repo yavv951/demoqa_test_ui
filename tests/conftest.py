@@ -36,6 +36,7 @@ def load_env():
 
 
 @pytest.fixture(scope='function', autouse=True)
+@allure.step('Set up base url, browser type')
 def setup_browser(request):
     browser_version = request.config.getoption('--browser_version')
     browser_version = browser_version if browser_version != "" else DEFAULT_BROWSER_VERSION
