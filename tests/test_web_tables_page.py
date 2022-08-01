@@ -1,3 +1,5 @@
+import allure
+from allure_commons.types import Severity
 from selene.support.shared import browser
 
 from src.models.web_tables_page import WebTablesPageModel
@@ -9,38 +11,28 @@ class TestWebTablesPage:
     Тест сьют. Тестирование странцы web tables
     """
 
+    @allure.tag('WEB UI')
+    @allure.severity(Severity.CRITICAL)
+    @allure.label('Owner', 'Vadim')
+    @allure.feature('Testing site qa guru with selene')
+    @allure.story(f'Тест кейс 0002 Форма регистрации студента')
+    @allure.link('https://github.com/yavv951', name='Owner')
+    @allure.step("Открываем страницу https://demoqa.com/webtables")
     def test_web_tables(self, app_web_tables_page):
-        """
-        Тест кейс 0002
-        1. открыть страницу https://demoqa.com/webtables
-        2. Нажать на кнопку добавить(Add)
-        3. Заполнить форму регистрации:
-           First Name
-           Last Name
-           Email
-           Age
-           Salary
-           Department
-        4. Проверить,что заполненные поля отобразились в форме регистрациию
-        5. Редактируем  все поля во второй строке
-        6. Проверяем, что поля отредактированы
-        7. Удаляем третью строку
-        8. Проверяем,что строка удалилась
-        """
         field_first = WebTablesPageModel.random()
-        app_web_tables_page.web_tables_page\
-            .click_add_button()\
-            .fill_form_registration(field_first)\
-            .click_submit_button()\
+        app_web_tables_page.web_tables_page \
+            .click_add_button() \
+            .fill_form_registration(field_first) \
+            .click_submit_button() \
             .check_elements_on_fourth_line(field_first)
         field_second = WebTablesPageModel.random()
-        app_web_tables_page.web_tables_page\
-            .click_edit_form()\
-            .fill_form_registration(field_second).click_submit_button()\
-            .check_elements_on_second_line(field_second)\
-            .delete_record()\
+        app_web_tables_page.web_tables_page \
+            .click_edit_form() \
+            .fill_form_registration(field_second) \
+            .click_submit_button() \
+            .check_elements_on_second_line(field_second) \
+            .delete_record() \
             .check_delete_element()
-
         attach.add_html(browser)
         attach.add_screenshot(browser)
         attach.add_logs(browser)
