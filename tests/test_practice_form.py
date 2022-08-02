@@ -29,15 +29,15 @@ class TestPracticeFormPage:
     def test_form_registration_student(self, app, image_file):
         abs_path = os.path.join(self.image_dir, image_file)
         field = PracticeFormPageModel.random()
-        app.practice_form_page \
-            .input_information_student(field) \
-            .fill_date_form(field) \
-            .input_state_city(field) \
-            .input_hobbies(field) \
-            .input_gender(field) \
-            .choose_image_file(abs_path) \
-            .click_submit() \
-            .check_have_text_on_submiting_form(field) \
+        app.practice_form_page\
+            .input_information_student(field)\
+            .fill_date_form(field)\
+            .input_state_city(field)\
+            .input_hobbies(field)\
+            .input_gender(field)\
+            .choose_image_file(abs_path)\
+            .click_submit()\
+            .check_have_text_on_submiting_form(field)\
             .click_on_button_close()
 
         attach.add_html(browser)
