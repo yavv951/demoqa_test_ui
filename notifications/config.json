@@ -4,14 +4,14 @@
     "project": "some project",
     "environment": "PROD",
     "comment": "link to pull request",
-    "reportLink": "https://jenkins.autotests.cloud/job/qa_guru_demoqa_lesson_9/14/",
+    "reportLink": "https://jenkins.autotests.cloud/job/qa_guru_demoqa_lesson_9/1466/",
     "language": "en",
     "allureFolder": "allure-report/",
     "enableChart": true
   },
   "telegram": {
-    "token": "5469385155:AAHyQhkErEOdi8NT0m5NnoWAhkj6eRQIqro",
-    "chat": "-638095156",
+    "token": "54693851655:AAHyQhkErEOdi8NT0m5NnoWAhkj6eRQIqro",
+    "chat": "-6380951566",
     "replyTo": ""
   }
 }
