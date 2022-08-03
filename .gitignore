@@ -128,5 +128,5 @@ dmypy.json
 .pyre/
 
 
-.notifications/commands.txt
+./commands.txt
 allure-report
