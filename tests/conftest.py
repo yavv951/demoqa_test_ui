@@ -60,7 +60,7 @@ def setup_browser(request):
 @pytest.fixture
 def app(request, setup_browser):
     base_url = request.config.getoption("--base-url")
-    browser.open_url(base_url).driver.set_window_size(width=1980, height=1280)
+    browser.open(base_url).driver.set_window_size(width=1980, height=1280)
     app = Application(base_url)
     yield app
     app.close()
@@ -69,7 +69,7 @@ def app(request, setup_browser):
 @pytest.fixture
 def app_web_tables_page(request, setup_browser):
     base_url = request.config.getoption("--web-tables-url")
-    browser.open_url(base_url).driver.set_window_size(width=1980, height=1280)
+    browser.open(base_url).driver.set_window_size(width=1980, height=1280)
     app = Application(base_url)
     yield app
     app.close()

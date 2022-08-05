@@ -92,7 +92,7 @@ class BasePage:
 
     @staticmethod
     def close():
-        return browser.close()
+        return browser.close_current_tab()
 
     @staticmethod
     def scroll_metod(x=0, y=0):
