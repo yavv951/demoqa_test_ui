@@ -14,7 +14,7 @@ user_images_directory = os.path.join(current_dir, "user_images")
 
 class TestPracticeFormPage:
     """
-    Тест сьют. Тестирование странцы demoqa
+    Тест сьют. Тестирование странцы demoqa.
     """
 
     image_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "user_images")
